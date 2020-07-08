@@ -1,0 +1,56 @@
+.notes-main{
+    text-align: center;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background: transparent;
+    /* border: 2px solid orange; */
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 2px orange;
+}
+#logo{
+    width: 20%;
+    cursor: pointer;
+}
+#logo p{
+    font-size: 1.8em;
+    /* font-weight: 400; */
+    font-family: 'Galada', cursive;
+}
+nav{
+    width: 70%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.links a:hover, a:active {
+    color: orange;
+}
+
+.links a:active {
+    border-bottom: 2px solid black;
+}
+
+.notes-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}

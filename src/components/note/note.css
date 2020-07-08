@@ -1,0 +1,18 @@
+.note{
+    border: none;
+    width: 240px;
+    height: 80px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 2px grey;
+}
+
+hr{
+    width: 30%;
+    margin-top: -11px;
+    transition: background-color .5s ease-out;
+}
+
+.date{
+    font-size: .7rem;
+    font-weight: 200;
+}
