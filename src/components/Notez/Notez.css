@@ -20,8 +20,12 @@ header{
 }
 #logo p{
     font-size: 1.8em;
-    /* font-weight: 400; */
     font-family: 'Galada', cursive;
+}
+
+#logo p a {
+    text-decoration: none;
+    color: black;
 }
 nav{
     width: 70%;
@@ -46,11 +50,4 @@ nav ul {
 
 .links a:active {
     border-bottom: 2px solid black;
-}
-
-.notes-body{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
 }

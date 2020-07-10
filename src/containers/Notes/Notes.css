@@ -1,0 +1,13 @@
+.Notes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+strong a{
+    text-decoration: none;
+    color: orange;
+}

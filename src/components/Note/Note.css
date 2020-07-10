@@ -1,0 +1,12 @@
+.note{
+    border: none;
+    width: 200px;
+    height: 80px;
+    box-shadow: 0px 2px 2px grey;
+}
+
+
+.date{
+    font-size: .7rem;
+    font-weight: 200;
+}
