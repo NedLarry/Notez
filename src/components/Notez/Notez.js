@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { Route, NavLink, Switch, Link } from 'react-router-dom';
 import Notes from '../../containers/Notes/Notes';
 import Newnote from '../../containers/newNote/newnote';
+import Fullnote from '../../containers/Fullnote/Fullnote';
 import './Notez.css';
 
 class Notez extends Component {
     render () {
         return (
-            <div className="notes-main" onClick={this.home}> 
+            <div className="notes-main"> 
                 <header>
                     
                     <div id="logo">
@@ -22,8 +23,9 @@ class Notez extends Component {
                 </header>
 
                 <Switch>
-                    <Route path="/notes" component={Notes} />
-                    <Route path="/newnote" component={Newnote} />
+                    <Route path="/notes" exact component={Notes} />
+                    <Route path="/newnote" exact component={Newnote} />
+                    <Route path={'/fullnote/:id'} exact component={Fullnote} />
                     <Route render={() => <h1>Welcome To Notez</h1>} />
                 </Switch>
 
