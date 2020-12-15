@@ -1,6 +1,13 @@
 .App {
-  width: 40%;
+  width: 35%;
   margin: auto;
   padding: 0;
   /* border: 1px solid red; */
+}
+
+
+@media screen and (max-width: 500px){
+  .App{
+    width: 80%;
+  }
 }

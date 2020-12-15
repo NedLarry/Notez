@@ -16,10 +16,12 @@ class FullNote extends Component {
                             <p className="note-body">{el.Note}</p>
                         </div>
                     </article>
-
                 )
+            return el
         })
+
         return post
+
     }
 }
 

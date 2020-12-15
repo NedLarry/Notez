@@ -6,34 +6,37 @@ import Fullnote from '../../containers/Fullnote/Fullnote';
 import './Notez.css';
 
 class Notez extends Component {
+
     render () {
+
         return (
             <div className="notes-main"> 
                 <header>
-                    
-                    <div id="logo">
-                        <p><Link to="/">Notez</Link></p>
-                    </div>
+
                     <nav>
+                                             
+                        <div id="logo">
+                            <p><Link to="/">Notez</Link></p>
+                        </div>
                         <ul>
-                            <li className="links"><NavLink to="/notes">Notes</NavLink></li>
+                            {/* <li className="links"><NavLink to="/notes">Notes</NavLink></li> */}
                             <li className="links"><NavLink to="/newnote">New Note</NavLink></li>
                         </ul>
                     </nav>
+
                 </header>
 
                 <Switch>
-                    <Route path="/notes" exact component={Notes} />
+                    <Route path="/" exact component={Notes} />
                     <Route path="/newnote" exact component={Newnote} />
                     <Route path={'/fullnote/:id'} exact component={Fullnote} />
                     <Route render={() => <h1>Welcome To Notez</h1>} />
                 </Switch>
 
-
-
             </div>
         )
     }
 }
+
 
 export default Notez;

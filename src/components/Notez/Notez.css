@@ -6,9 +6,9 @@
 header{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 60px;
+    /* height: 60px; */
     background: transparent;
     /* border: 2px solid orange; */
     margin-bottom: 50px;
@@ -28,10 +28,15 @@ header{
     color: black;
 }
 nav{
-    width: 70%;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav ul {
+    width: 60%;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -51,3 +56,17 @@ nav ul {
 .links a:active {
     border-bottom: 2px solid black;
 }
+
+/* @media screen and (max-width: 500px){
+    .notes-main{
+        width: 100%;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    header nav{
+        width: 100%;
+    }
+} */

@@ -14,8 +14,10 @@ class Notes extends Component {
 
     render () {
 
-        let notes = <p style={{ textAlign: 'center', color: 'grey' }}>You have no Notes! Click 
-            <strong style={{color: 'orange', textDecoration: 'none'}}> <Link to="/newnote" >New Note</Link></strong> to make one.
+        let notes = <p style={{ textAlign: 'center', color: 'grey', margin: 'auto' }}>You have no Notes! Click 
+            <strong style={{color: 'orange', textDecoration: 'none'}}> 
+                <Link to="/newnote" > New Note</Link>
+                </strong> to make one.
             </p>;
 
         if ( this.props.notes.length !== 0 ) {
